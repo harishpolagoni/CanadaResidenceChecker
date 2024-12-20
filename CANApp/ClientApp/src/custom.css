@@ -1,0 +1,316 @@
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+code {
+  color: #E01A76;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+/* Overall container for the citizenship roadmap */
+.roadmap-container {
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    background-color: #f4f4f9;
+}
+
+.header-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+    .header-container img {
+        border-radius: 8px;
+    }
+
+h2 {
+    color: #2c3e50;
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+/* Container for the table */
+.table-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow-x: auto;
+}
+
+/* Table styles */
+.residence-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+    /* Table header styles */
+    .residence-table th {
+        padding: 12px;
+        background-color: #3498db;
+        color: white;
+        text-align: left;
+        font-weight: bold;
+    }
+
+        .residence-table th:hover {
+            background-color: #2980b9;
+        }
+
+    /* Table row styles */
+    .residence-table td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    /* Row hover effect */
+    .residence-table tr:hover {
+        background-color: #ecf0f1;
+    }
+
+    /* Zebra stripe effect for rows */
+    .residence-table tr:nth-child(odd) {
+        background-color: #f9f9f9;
+    }
+
+    .residence-table tr:nth-child(even) {
+        background-color: #ffffff;
+    }
+
+    /* List styling within travel dates */
+    .residence-table ul {
+        margin: 0;
+        padding-left: 20px;
+        list-style-type: none;
+    }
+
+    /* List item styling */
+    .residence-table li {
+        font-size: 0.9em;
+        color: #34495e;
+        margin-bottom: 8px; /* Adds space between each travel date entry */
+    }
+    /* Date labels (Entry: and Exit:) in bold */
+    .date-label {
+        font-weight: bold;
+        color: #2c3e50;
+    }
+
+    /* Separator between Entry and Exit dates */
+    .date-separator {
+        margin: 0 8px;
+        color: #34495e;
+    }
+    /* Loading text */
+    .table-container > div {
+        text-align: center;
+        font-size: 1.2em;
+        color: #3498db;
+        font-weight: bold;
+    }
+    .update-record-container {
+        font-family: 'Arial', sans-serif;
+        max-width: 500px;
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-title {
+        text-align: center;
+        font-size: 1.5em;
+        color: #2c3e50;
+        margin-bottom: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #34495e;
+    }
+
+    input,
+    select {
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 1em;
+    }
+
+        input:focus,
+        select:focus {
+            outline: none;
+            border-color: #3498db;
+            box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+        }
+
+    .update-button {
+        padding: 10px 20px;
+        font-size: 1em;
+        color: white;
+        background-color: #3498db;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        text-align: center;
+        transition: background-color 0.3s ease;
+    }
+
+    .update-button:hover {
+        background-color: #2980b9;
+    }
+
+.message {
+    margin-top: 15px;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9em;
+    border-radius: 4px;
+}
+
+    .message.success {
+        color: #27ae60;
+        background-color: #eafaf1;
+        border: 1px solid #27ae60;
+    }
+
+    .message.error {
+        color: #e74c3c;
+        background-color: #fdecea;
+        border: 1px solid #e74c3c;
+    }
+.edit-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #007bff;
+    padding: 5px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.edit-button:hover {
+    transform: scale(1.2);
+    color: #0056b3;
+}
+.add-resident-container {
+    display: flex;
+    justify-content: flex-end; /* Aligns the button to the right */
+    margin-top: 20px; /* Adds space below the table */
+    padding-right: 15px; /* Slight padding for alignment */
+}
+.add-resident-button {
+    background-color: #28a745; /* Green button for clarity */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px; /* Slightly smaller font */
+    padding: 8px 16px; /* Adjusted padding for smaller size */
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    width: auto; /* Dynamically size button based on content */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; /* Space between icon and text */
+}
+
+.add-resident-button:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: translateY(-2px); /* Subtle lift */
+}
+
+.add-resident-button:active {
+    background-color: #006f33; /* Even darker green on active */
+    transform: translateY(0);
+}
+.update-record-container {
+    position: relative; /* Ensure that the close button is positioned relative to this container */
+    padding-right: 40px; /* To provide space for the close button */
+}
+
+.close-button-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.close-button {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.close-button:hover {
+    background-color: #f44336; /* Red background on hover */
+    color: white;
+    transform: scale(1.1); /* Slightly scale the button on hover */
+}
+
+.close-icon {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.close-button:focus {
+    outline: none;
+}
+
+.close-button:hover .close-icon {
+    font-size: 22px; /* Slightly increase size of the "X" when hovered */
+}
+.delete-button {
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.add-travel-button {
+    background-color: lightgreen;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+    .add-travel-button:hover {
+        background-color: green;
+    }
+
+

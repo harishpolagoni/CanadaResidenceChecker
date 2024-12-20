@@ -1,0 +1,32 @@
+{
+  "ResidenceRecords": [
+    {
+      "Name": "Harish Polagoni",
+      "TotalNumberOfDays": 638,
+      "TravelDates": [
+        {
+          "DateOfEntry": "2023-01-25",
+          "DateOfExit": "2024-09-14"
+        },
+        {
+          "DateOfEntry": "2024-10-28",
+          "DateOfExit": null
+        }
+      ]
+    },
+    {
+      "Name": "Susmita Kommuru",
+      "TotalNumberOfDays": 484,
+      "TravelDates": [
+        {
+          "DateOfEntry": "2023-01-25",
+          "DateOfExit": "2024-04-30"
+        },
+        {
+          "DateOfEntry": "2024-11-21",
+          "DateOfExit": null
+        }
+      ]
+    }
+  ]
+}
